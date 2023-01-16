@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './cpFile.png';
+import banner from './cpFile.png';
+
 import './App.css';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img style={{ height: 500 }} src={banner} className="img-banner" alt="File copy" />
         <p>
           Static Web App: React App with Azure Function API
         </p>
@@ -36,7 +37,7 @@ function App() {
             <button type="submit" className="App-button">Submit</button>
           </div>
         </form>
-        <div><h5>Message: {message} </h5></div>
+        <div><h5>Congratulations! {message} </h5></div>
       </header>
     </div>
   );
